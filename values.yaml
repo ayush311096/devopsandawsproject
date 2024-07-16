@@ -1,0 +1,26 @@
+replicaCount: 1
+
+image:
+  repository: ayush1096/fluenttestimage_7:customimage_7
+  tag: latest
+  pullPolicy: IfNotPresent
+
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  name: my-service
+  type: ClusterIP
+  port: 80
+
+ingress:
+  enabled: false
+  name: ""
+  nginx:
+    className: ""
+  path: /
+  hosts:
+    - host: chart-example.local
+      paths:
+        - /
+  tls: []
