@@ -1,9 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "my-chart.fullname" . }}
-  labels:
-    {{- include "my-chart.labels" . | nindent 4 }}
+  name: {{ include "my-chart.fullname" . }}}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
