@@ -3,11 +3,8 @@ kind: Deployment
 metadata:
   name: {{ include "my-chart.fullname" . }}
 spec:
-  selector:
   template:
     metadata:
-      labels:
-        {{- include "my-chart.selectorLabels" . | nindent 8 }}
     spec:
       containers:
         - name: {{ .Chart.Name }}
