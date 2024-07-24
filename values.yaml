@@ -1,3 +1,4 @@
+kind: Chart
 replicaCount: 1
 
 image:
