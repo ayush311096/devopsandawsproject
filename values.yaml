@@ -1,4 +1,7 @@
+apiVersion: v1
 kind: Chart
+metadata:
+  name: my-chart
 replicaCount: 1
 
 image:
