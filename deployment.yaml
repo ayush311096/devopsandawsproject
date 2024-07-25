@@ -62,7 +62,7 @@ metadata:
     nginx.ingress.kubernetes.io/upstream-hash-by-subset: "true"
     nginx.ingress.kubernetes.io/upstream-hash-by-subset-size: "3"
   name: nginxhello-ingress
-  namespace: default
+  namespace: test-ns
 spec:
   ingressClassName: nginx
   rules:
