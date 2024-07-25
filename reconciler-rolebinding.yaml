@@ -5,7 +5,7 @@ metadata:
   namespace: test-ns
 subjects:
 - kind: ServiceAccount
-  name: system:serviceaccount:config-management-system:ns-reconciler-test-ns-main-4
+  name: config-management-system:ns-reconciler-test-ns-main-4
   namespace: test-ns
 roleRef:
   kind: Role
