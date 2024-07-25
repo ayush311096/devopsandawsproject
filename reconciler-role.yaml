@@ -5,5 +5,5 @@ metadata:
   name: reconciler-role
 rules:
 - apiGroups: [""]
-  resources: ["pods", "services"]  # Add additional resources as needed
+  resources: ["roles"]
   verbs: ["get", "list", "watch", "create", "update", "delete"]
