@@ -3,7 +3,7 @@ apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
   name: testpackage-gcp
-  namespace: test-eks-ns
+  namespace: config-management-system
 spec:
   sourceType: git
   # Since this is for a namespace repository, the format is unstructured
@@ -16,3 +16,6 @@ spec:
     auth: none
     gcpServiceAccountEmail: anthos-service-account@in-10012-nats.iam.gserviceaccount.com
     noSSLVerify: true
+  namespaceSelector:
+    matchNames:
+    - test-eks-ns
