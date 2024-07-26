@@ -3,6 +3,7 @@ apiVersion: configsync.gke.io/v1beta1
 kind: RepoSync
 metadata:
   name: testpackage-gcp
+  namespace: test-eks-ns
 spec:
   sourceType: git
   # Since this is for a namespace repository, the format is unstructured
