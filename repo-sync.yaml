@@ -13,6 +13,6 @@ spec:
     revision: HEAD
     branch: main
     dir: "/"
-    auth: None
+    auth: none
     gcpServiceAccountEmail: anthos-service-account@in-10012-nats.iam.gserviceaccount.com
     noSSLVerify: true
